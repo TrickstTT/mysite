@@ -8,11 +8,6 @@
         <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 
-    <import resource="classpath:spring-context-druid.xml" />
-    <import resource="classpath:spring-context-mybatis.xml" />
-    <import resource="spring-context-captcha.xml"/>
-    <import resource="spring-context-shiro.xml"/>
-    <import resource="spring-context-ehcache.xml"/>
     <!-- 配置 Bean Validator 定义 -->
     <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean"/>
 </beans>
